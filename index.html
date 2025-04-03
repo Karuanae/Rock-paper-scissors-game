@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <main id="main-content">
+      <section id="container">
+        <h1>Rock Paper Scissors</h1>
+       
+        <div class="move-buttons">
+          <button onclick="playGame('rock')" class="move-button">
+            <img class="move-icon" src="./images/rock.jpeg" alt="Rock">
+          </button>
+          <button onclick="playGame('paper')" class="move-button">
+            <img class="move-icon" src="./images/paper.jpeg" alt="Paper">
+          </button>
+          <button onclick="playGame('scissors')" class="move-button">
+            <img class="move-icon" src="./images/scissors.jpeg" alt="Scissors">
+          </button>
+        </div>
+
+        <p class="result js-result">Choose a move to start!</p>
+
+        <p class="js-moves-chosen">
+          You
+          <img src="images/paper.jpeg" class="move-icon js-player-move">
+          <img src="images/scissors.jpeg" class="move-icon js-computer-move">
+          Computer
+        </p>
+
+        <p class="score js-score">Wins: 0, Losses: 0, Ties: 0</p>
+
+        <button class="reset-score" onclick="resetScore()">Reset Score</button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
